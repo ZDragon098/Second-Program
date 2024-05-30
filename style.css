@@ -1,0 +1,348 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "Total-Regular";
+  src: url(./assets/fonts/HankenGrotesk-VariableFont_wght.ttf);
+}
+
+:root {
+  --bodyBackground: hsl(0, 0%, 100%);
+  --leftBackground: hsl(252, 100%, 67%);
+  --leftBackgroundTwo: hsl(241, 81%, 54%);
+  --roundBackground: hsla(256, 72%, 46%, 1);
+  --roundBackgroundTwo: hsla(241, 72%, 46%, 0);
+  --reactionColor: hsl(0, 100%, 67%);
+  --memoryColor: hsl(39, 100%, 56%);
+  --verbalColor: hsl(166, 100%, 37%);
+  --visualColor: hsl(234, 85%, 45%);
+  --reactionBackground: #fff6f5;
+  --memoryBackground: #fffbf2;
+  --verbalBackground: #f2fbfa;
+  --visualBackground: #f3f3fd;
+
+  --txt1: hsl(224, 30%, 27%);
+  --txt2: hsl(241, 100%, 89%);
+  --txt3: hsl(221, 100%, 96%);
+}
+
+body {
+  font-family: "Total-Regular";
+  max-width: 100vw;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* padding-left: 20px; */
+  /* background-color: var(--bodyBackground); */
+  font-size: 18px;
+}
+.main-page {
+  max-width: 742px;
+  width: 100%;
+  height: 509px;
+  /* border: 1px solid */
+  border-radius: 20px;
+  background-color: var(--bodyBackground);
+  box-shadow: 10px 10px 30px var(--txt2);
+  display: flex;
+  align-items: center;
+  gap: 33px;
+}
+
+.left-info {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  background: linear-gradient(
+    to bottom,
+    var(--leftBackground) 10%,
+    var(--leftBackgroundTwo) 90%
+  );
+  border-radius: 20px;
+}
+
+.head {
+  color: var(--txt2);
+}
+
+.circle {
+  width: 190px;
+  height: 190px;
+  /* border: 1px solid; */
+  border-radius: 50%;
+  flex-direction: column;
+  flex-direction: center;
+  justify-content: center;
+  background: linear-gradient(
+    to bottom,
+    var(--roundBackground) 10%,
+    var(--roundBackgroundTwo) 90%
+  );
+}
+
+.number {
+  text-align: center;
+  color: var(--txt2); /* number-small class's color */
+}
+.number-big {
+  padding-top: 25%;
+  color: var(--txt3);
+  margin: 0 auto;
+  font-size: 50px;
+}
+
+.result {
+  text-align: center;
+  color: var(--txt3);
+}
+.result p {
+  color: var(--txt2);
+}
+.right-info {
+  text-align: center;
+}
+.right-content {
+  /* text-align: center; */
+  display: flex;
+  padding: 10px;
+}
+
+.right-head {
+  text-align: left;
+}
+.right-content {
+  margin-top: 30px;
+  border-radius: 10px;
+}
+.right-content img {
+  padding-right: 15px;
+}
+.right-content p {
+  padding-left: 70px;
+  color: var(--txt2);
+  font-size: 20px;
+}
+.reaction {
+  color: var(--reactionColor);
+  background-color: var(--reactionBackground);
+}
+.memory {
+  color: var(--memoryColor);
+  background-color: var(--memoryBackground);
+}
+.verbal {
+  color: var(--verbalColor);
+  background-color: var(--verbalBackground);
+}
+.Visual {
+  color: var(--visualColor);
+  background-color: var(--visualBackground);
+}
+
+.bold {
+  font-weight: bold;
+  color: var(--txt1);
+}
+
+button {
+  margin-top: 30px;
+  width: 283px;
+  height: 46.5px;
+  border: none;
+  border-radius: 50px;
+  background: linear-gradient(
+    to bottom,
+    var(--leftBackground) 10%,
+    var(--leftBackgroundTwo) 90%
+  );
+  color: var(--bodyBackground);
+  font-size: 18px;
+  font-family: "Total-Regular";
+  font-weight: bold;
+}
+
+.attribution {
+  display: none; 
+}
+
+@media (max-width:375px){
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  
+  @font-face {
+    font-family: "Total-Regular";
+    src: url(./assets/fonts/HankenGrotesk-VariableFont_wght.ttf);
+  }
+  
+  :root {
+    --bodyBackground: hsl(0, 0%, 100%);
+    --leftBackground: hsl(252, 100%, 67%);
+    --leftBackgroundTwo: hsl(241, 81%, 54%);
+    --roundBackground: hsla(256, 72%, 46%, 1);
+    --roundBackgroundTwo: hsla(241, 72%, 46%, 0);
+    --reactionColor: hsl(0, 100%, 67%);
+    --memoryColor: hsl(39, 100%, 56%);
+    --verbalColor: hsl(166, 100%, 37%);
+    --visualColor: hsl(234, 85%, 45%);
+    --reactionBackground: #fff6f5;
+    --memoryBackground: #fffbf2;
+    --verbalBackground: #f2fbfa;
+    --visualBackground: #f3f3fd;
+  
+    --txt1: hsl(224, 30%, 27%);
+    --txt2: hsl(241, 100%, 89%);
+    --txt3: hsl(221, 100%, 96%);
+  }
+  
+  body {
+    font-family: "Total-Regular";
+    max-width: 100vw;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* padding-left: 20px; */
+    /* background-color: var(--bodyBackground); */
+    font-size: 18px;
+  }
+  .main-page {
+    max-width: 100vh;
+    width: 100%;
+    height: 803px;
+    /* border: 1px solid */
+    border-radius: 20px;
+    background-color: var(--bodyBackground);
+    /* display: flex;
+    align-items: center; */
+    gap: 33px;
+  }
+  
+  .left-info {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    background: linear-gradient(
+      to bottom,
+      var(--leftBackground) 10%,
+      var(--leftBackgroundTwo) 90%
+    );
+    border-radius: 20px;
+    margin-bottom: 20px;
+  }
+  
+
+  .head {
+    color: var(--txt2);
+  }
+  
+  .circle {
+    width: 140px;
+    height: 140px;
+    /* border: 1px solid; */
+    border-radius: 50%;
+    flex-direction: column;
+    flex-direction: center;
+    justify-content: center;
+    background: linear-gradient(
+      to bottom,
+      var(--roundBackground) 10%,
+      var(--roundBackgroundTwo) 90%
+    );
+  }
+  
+  .number {
+    text-align: center;
+    color: var(--txt2); /* number-small class's color */
+  }
+  .number-big {
+    padding-top: 25%;
+    color: var(--txt3);
+    margin: 0 auto;
+    font-size: 50px;
+  }
+  .right-info {
+    text-align: center;
+    flex-direction: column;
+    margin: 20px;
+  }
+  .result {
+    text-align: center;
+    color: var(--txt3);
+  }
+  .result p {
+    color: var(--txt2);
+  }
+  
+  .right-content {
+    /* text-align: center; */
+    display: flex;
+    padding: 10px;
+    
+  }
+  
+  .right-head {
+    text-align: left;
+  }
+  .right-content {
+    margin-top: 30px;
+    border-radius: 10px;
+  }
+  .right-content img {
+    padding-right: 15px;
+  }
+  .right-content p {
+    padding-left: 70px;
+    color: var(--txt2);
+    font-size: 20px;
+  }
+  .reaction {
+    color: var(--reactionColor);
+    background-color: var(--reactionBackground);
+  }
+  .memory {
+    color: var(--memoryColor);
+    background-color: var(--memoryBackground);
+  }
+  .verbal {
+    color: var(--verbalColor);
+    background-color: var(--verbalBackground);
+  }
+  .Visual {
+    color: var(--visualColor);
+    background-color: var(--visualBackground);
+  }
+  
+  .bold {
+    font-weight: bold;
+    color: var(--txt1);
+  }
+  
+  button {
+    margin-top: 30px;
+    width: 283px;
+    height: 46.5px;
+    border: none;
+    border-radius: 50px;
+    background: var(--txt1);
+    color: var(--bodyBackground);
+    font-size: 18px;
+    font-family: "Total-Regular";
+    font-weight: bold;
+  }
+  
+}
